@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(12, 1, 1);overflow: hidden;">
+    <h1 class="titulo">Olá mundo</h1>
+    <div style="align-items: center; display: flex;">
+        <img width="340px" src="https://cocoecia.com.br/wp-content/uploads/2020/01/coco-vitrine.png"/>
+        <a style="color: #cc0066df">Olá</a>
+    </div>
+    <video width="400px" src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    <style>
+        .titulo {
+            text-align: center;
+            color:rgb(235, 82, 21);
+            animation: move 3.5s cubic-bezier(0.24,-0.43, 0.54,-0.26) infinite ;
+        }
+        .titulo:hover {
+            color: violet ;
+            cursor: grab ;
+        }
+        @keyframes move {
+            0% {
+                transform: translateX(0px);
+            } 
+            50% {
+                transform: translateX(-240px);
+            } 
+            100% {
+                transform: translateX(400px);
+            }
+        }
+    </style>
+</body>
+</html>
